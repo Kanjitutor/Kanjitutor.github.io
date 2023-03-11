@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+}
+  
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #F5F5DC; /* light cream */
+  overflow: hidden;
+}
+
+#kanji, #meanings h2, #meanings p {
+  font-family: Arial, sans-serif;
+}
+
+.top-image {
+  width: 8%;
+  position: absolute;
+  top: 2.1%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.left-image {
+  width: 13%;
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  transform: translateY(-30%);
+  transform: rotate(-10deg);
+}
+
+.right-image {
+  width: 12%;
+  position: absolute;
+  top: 70%;
+  right: 5%;
+  transform: translateY(-30%);
+  transform: rotate(10deg);
+}
+
+#flip-btn {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#flip-btn:hover {
+  background-color: #3E8E41;
+}
+
+
+
+.kanji-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border: 10px solid black;
+  border-radius: 10px;
+  background-color: #F8F8E7;
+  border-color: #89CFF0; /* babyblue */
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
