@@ -1,10 +1,12 @@
 body {
   margin: 0;
+  font-size: 16px;
 }
-  
+
 .container {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -14,51 +16,53 @@ body {
 
 #kanji, #meanings h2, #meanings p {
   font-family: Arial, sans-serif;
-}
-
-.top-image {
-  width: 8%;
-  position: absolute;
-  top: 2.1%;
-  left: 50%;
-  transform: translateX(-50%);
   text-align: center;
 }
 
+.top-image {
+  width: 50%;
+  max-width: 200px;
+  margin-top: 1rem;
+}
+
 .left-image {
-  width: 13%;
-  position: absolute;
-  top: 70%;
-  left: 5%;
-  transform: translateY(-30%);
-  transform: rotate(-10deg);
+  width: 30%;
+  max-width: 150px;
+  margin-top: 2rem;
 }
 
 .right-image {
-  width: 12%;
-  position: absolute;
-  top: 70%;
-  right: 5%;
-  transform: translateY(-30%);
-  transform: rotate(10deg);
+  width: 30%;
+  max-width: 150px;
+  margin-top: 2rem;
 }
 
 #flip-btn {
   background-color: #4CAF50;
   color: white;
   border-radius: 10px;
-  font-size: 16px;
-  padding: 10px 20px;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 1.5rem;
 }
 
-#flip-btn:hover {
-  background-color: #3E8E41;
+#kanji {
+  font-size: 3rem;
+  margin-top: 2rem;
 }
 
+#meanings h2 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
 
+#meanings p {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
 
 .kanji-box {
   display: flex;
@@ -69,6 +73,8 @@ body {
   border-radius: 10px;
   background-color: #F8F8E7;
   border-color: #89CFF0; /* babyblue */
+  width: 90%;
+  max-width: 400px;
 }
 
 .hidden {
